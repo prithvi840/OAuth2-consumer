@@ -1,0 +1,28 @@
+{
+  "name": "oauth-consumer",
+  "version": "1.0.0",
+  "description": "Implementing google oauth using passport strategy to understand OAuth authentication better.",
+  "main": "src/bin/server.js",
+  "scripts": {
+    "start": "NODE_ENV=prod node ./src/bin/server.js",
+    "dev": "nodemon ./src/bin/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "OAuth"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-session": "^2.0.0",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.6",
+    "passport": "^0.5.2",
+    "passport-google-oauth20": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
