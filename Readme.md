@@ -9,3 +9,16 @@ When a user selects the service provider a consent screen is shown to the them. 
 ![OAuth Flow Diagram](https://stage.objectpartners.com/wp-content/uploads/2016/01/OAuth2-Authorization-Flow.png "OAuth2 Authorization Flow")
 
 This project is for learning to use OAuth2 as a consumer. Which means access token for user is provided by the service provider. Which can be used to authenticate as well as perform actions on behalf of the user.
+
+### How to run
+* Create a .env file at the root directory & add following keys: -
+    - PORT
+    - HOST
+    - GOOGLE_CLIENT_ID
+    - GOOGLE_CLIENT_SECRET
+    - DB_URI
+    - COOKIE_SECRET
+
+* Run the docker compose file using `docker-compose up`
+
+* Or use docker build and run command like `docker build -t OAuth-consumer:1.0.0 .` & `docker run -it --name oauth-consumer:1.0.0 -p 3300:3300 --env-file ./.env oauth-consumer:1.0.0`

@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  oauth-consumer:
+    container_name: oauth-consumer
+    restart: on-failure
+    env_file:
+      - .env
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "${PORT}:${PORT}"
+    image: oauth-consumer:1.0.0
+    
